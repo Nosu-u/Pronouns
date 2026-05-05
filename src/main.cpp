@@ -15,12 +15,12 @@ class $modify(PR, ProfilePage) {
         	auto winSize = CCDirector::get()->getWinSize();
 			auto layer = m_mainLayer;
 			auto playerStatus = layer->getChildByID("xjotabelikex.player-status/player-status-label");
+			auto usernameMenu = layer->getChildByIDRecursive("username-menu");
 			auto buttonText = CCLabelBMFont::create(mod->getSettingValue<std::string>("pronouns-text").c_str(), "bigFont.fnt");
 			auto myID = GJAccountManager::get()->m_accountID;
 
 			if (score->m_accountID == myID) {
 				auto button = CCMenuItemSpriteExtra::create(buttonText, this, menu_selector(PR::onPrSettings));
-				auto usernameMenu = layer->getChildByIDRecursive("username-menu");
 				auto menu = CCMenu::create();
 
 				buttonText->setColor(mod->getSettingValue<ccColor3B>("text-color"));
