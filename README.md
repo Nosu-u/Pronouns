@@ -1,7 +1,7 @@
 # Pronouns!
 <img src="logo.png" width="150" alt="the mod's logo" />
 
-### If you want to contact me for whatever reason, message me on Discord (nos.uu) or open an issue on [Github](https://github.com/Nosu-u/Pronouns!)
+### If you want to contact me for whatever reason, message me on Discord (nos.uu) or open an issue here
 
 Tired of people misgendering you in the daily chat? Say no more!
 

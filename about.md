@@ -1,5 +1,5 @@
 # Pronouns!
-### If you want to contact me for whatever reason, message me on Discord (nos.uu) or open an issue on [Github](https://github.com/Nosu-u/Pronouns!)
+### If you want to contact me for whatever reason, message me on Discord (nos.uu) or open an issue on [Github](https://github.com/Nosu-u/Pronouns)
 
 Tired of people misgendering you in the daily chat? Say no more!
 
