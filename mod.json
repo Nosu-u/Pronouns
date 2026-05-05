@@ -1,0 +1,53 @@
+{
+	"geode": "5.7.1",
+	"gd": {
+		"win": "2.2081",
+		"android": "2.2081",
+		"mac": "2.2081",
+		"ios": "2.2081"
+	},
+	"id": "nosu.pronouns",
+	"name": "Pronouns!",
+	"version": "v1.0.0",
+	"developer": "Nosu",
+	"description": "Add pronouns to your gd profile",
+	"dependencies": {
+		"geode.node-ids": ">=v1.23.3",
+    	"hiimjasmine00.user_data_api": {
+			"version": ">=v2.0.0",
+            "required": true
+		}
+	},
+	"settings": {
+		"pronouns-text": {
+    		"type": "string",
+    		"name": "Your pronouns",
+    		"default": "She/her",
+    		"match": "[A-Za-z/]+",
+    		"filter": "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ/"
+		},
+
+		"text-color": {
+    		"type": "rgb",
+    		"name": "Color of the text",
+    		"default": "#FFE21B"
+		}
+	},
+
+	"tags": [
+        "universal",
+		"content",
+		"interface",
+		"customization"
+    ],
+
+	"links": {
+        "source": "https://github.com/Nosu-u/Pronouns!"
+    },
+
+	"resources": {
+		"sprites": [
+			"resources/*.png"
+		]
+	}
+}
