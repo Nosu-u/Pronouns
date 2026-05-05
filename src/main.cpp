@@ -20,6 +20,7 @@ class $modify(PR, ProfilePage) {
 
 			if (score->m_accountID == myID) {
 				auto button = CCMenuItemSpriteExtra::create(buttonText, this, menu_selector(PR::onPrSettings));
+				auto usernameMenu = layer->getChildByIDRecursive("username-menu");
 				auto menu = CCMenu::create();
 
 				buttonText->setColor(mod->getSettingValue<ccColor3B>("text-color"));
@@ -27,6 +28,10 @@ class $modify(PR, ProfilePage) {
 
 				menu->setPosition({ 0.0f, 0.0f });
 				menu->setID("pr-menu"_spr);
+
+				if (usernameMenu && playerStatus) {
+					menu->setZOrder(this->getChildByIDRecursive("username-menu")->getZOrder() + 1);
+				}
 
 				if (playerStatus) {
         			button->setPosition({ 0.5f * winSize.width, 0.52f * winSize.height });
