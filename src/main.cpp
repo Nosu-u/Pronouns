@@ -30,7 +30,7 @@ class $modify(PR, ProfilePage) {
 				menu->setID("pr-menu"_spr);
 
 				if (usernameMenu && playerStatus) {
-					menu->setZOrder(this->getChildByIDRecursive("username-menu")->getZOrder() + 1);
+					menu->setZOrder(usernameMenu->getZOrder() + 1);
 				}
 
 				if (playerStatus) {
@@ -70,6 +70,10 @@ class $modify(PR, ProfilePage) {
 				} else {
 					buttonText->setPosition({ 0.5f * winSize.width, 0.83f * winSize.height });
 					buttonText->setScale(0.5);
+				}
+
+				if (usernameMenu && playerStatus) {
+					buttonText->setZOrder(usernameMenu->getZOrder() + 1);
 				}
 
 				layer->addChild(buttonText);
