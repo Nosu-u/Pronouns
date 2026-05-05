@@ -8,7 +8,7 @@
 	},
 	"id": "nosu.pronouns",
 	"name": "Pronouns!",
-	"version": "v1.0.0",
+	"version": "v1.0.1",
 	"developer": "Nosu",
 	"description": "Add pronouns to your gd profile",
 	"dependencies": {
