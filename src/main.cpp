@@ -10,6 +10,14 @@ class $modify(PR, ProfilePage) {
 	 void loadPageFromUserInfo(GJUserScore* score) {
 		ProfilePage::loadPageFromUserInfo(score);
 
+		if (auto oldText = m_mainLayer->getChildByID("pr-button-text"_spr)) {
+			oldText->removeFromParentAndCleanup(true);
+		}
+
+		if (auto oldMenu = m_mainLayer->getChildByID("pr-menu"_spr)) {
+			oldMenu->removeFromParentAndCleanup(true);
+		}
+
 		user_data::handleProfilePage(this, [this](GJUserScore* score) {
 			auto mod = Mod::get();
         	auto winSize = CCDirector::get()->getWinSize();
